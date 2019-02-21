@@ -17,4 +17,8 @@ describe("Arabic to Roman Test cases", function() {
     it("4 should equal IV", function() {
 		expect(Converter.a2r(4)).toEqual("IV");
     });
+
+    it("8 should equal VIII", function() {
+      expect(Converter.a2r(4)).toEqual("VIII");
+      });
 });
