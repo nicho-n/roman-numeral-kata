@@ -6,10 +6,10 @@ var Converter = {
         var self = this;
 
         if (self.m[a] != undefined){
-            return ret += this.m[a];
+            return ret += self.m[a];
         }
         
-        var keys = Object.keys(this.m);
+        var keys = Object.keys(slef.m);
         
         for (var i = keys.length; i >= 0; i--){
             var key = keys[i]
