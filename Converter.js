@@ -1,7 +1,9 @@
 var Converter = {
     //arabic to roman 
+    m: {1: "1", 5: "V"},
+
     a2r: function(a){
-        return "I";
+        return m[a];
     }
 };
 
