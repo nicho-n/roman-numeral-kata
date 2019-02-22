@@ -9,7 +9,7 @@ var Converter = {
             return ret += self.m[a];
         }
         
-        var keys = Object.keys(slef.m);
+        var keys = Object.keys(self.m);
         
         for (var i = keys.length; i >= 0; i--){
             var key = keys[i]
