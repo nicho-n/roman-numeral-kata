@@ -18,11 +18,6 @@ describe("Arabic to Roman Test cases", function() {
       expect(Converter.a2r(8)).toEqual("VIII");
     });
 
-    it("49 should equal XLIX", function() {
-      expect(Converter.a2r(49)).toEqual("XLIX");
-    });
-
-
 });
 
 
@@ -33,6 +28,18 @@ describe("Roman to Arabic Test cases", function() {
     
     it("V should equal 5", function() {
       expect(Converter.r2a("V")).toEqual('5');
+    });
+
+    it("IV should equal 4", function() {
+      expect(Converter.r2a("IV")).toEqual('4');
+    });
+  
+    it("VIII should equal 8", function() {
+        expect(Converter.r2a('VIII')).toEqual("8");
+    });
+  
+    it("XLIX should equal 49", function() {
+        expect(Converter.r2a("XLIX")).toEqual("49");
     });
 
 });

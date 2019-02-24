@@ -25,8 +25,9 @@ var Converter = {
     },
 
     r2a: function(a, ret=""){
-        var m = _.invert(this.m)
-        return m[a]
+        var x = _.invert(this.m)
+        return x[a]
+        
     }
 }
     
