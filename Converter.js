@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 var Converter = {
     m: {1000: "M", 900:"CM", 500:"D", 400:"CD", 100:"C", 90:"XC", 50:"L", 40:"XL", 10:"X", 9:"IX", 5:"V", 4:"IV", 1: "I"},
 
@@ -23,7 +25,8 @@ var Converter = {
     },
 
     r2a: function(a, ret=""){
-        return 1;
+        var m = _.invert(this.m)
+        return m[a]
     }
 }
     

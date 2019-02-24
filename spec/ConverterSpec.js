@@ -28,7 +28,11 @@ describe("Arabic to Roman Test cases", function() {
 
 describe("Roman to Arabic Test cases", function() {
     it("I should equal 1", function() { 
-		  expect(Converter.r2a("I")).toEqual(1);
-    });    
+		  expect(Converter.r2a("I")).toEqual('1');
+    }); 
+    
+    it("V should equal 5", function() {
+      expect(Converter.r2a("V")).toEqual('5');
+    });
 
 });
