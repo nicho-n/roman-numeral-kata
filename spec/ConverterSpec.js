@@ -1,12 +1,8 @@
 var Converter = require("../Converter"); 
 
 describe("Arabic to Roman Test cases", function() {
-
-    it("converter should exist", function() {
-		expect(Converter).not.toEqual(undefined);
-    });
     
-    it("1 should return I", function() { 
+    it("1 should equal I", function() { 
 		expect(Converter.a2r(1)).toEqual("I");
     });
 
@@ -26,5 +22,13 @@ describe("Arabic to Roman Test cases", function() {
       expect(Converter.a2r(49)).toEqual("XLIX");
     });
 
+
+});
+
+
+describe("Roman to Arabic Test cases", function() {
+    it("I should swal 1", function() { 
+		  expect(Converter.a2r("I")).toEqual("1");
+    });    
 
 });
