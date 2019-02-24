@@ -20,6 +20,10 @@ var Converter = {
         }
         
         return ret;
+    },
+
+    r2a: function(a, ret=""){
+        return 1;
     }
 }
     
