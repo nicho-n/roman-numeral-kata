@@ -24,9 +24,16 @@ var Converter = {
         return ret;
     },
 
-    r2a: function(a, ret=""){
-        var x = _.invert(this.m)
-        return x[a]
+    r2a: function(a, ret=0){
+        var x = _.invert(this.m), a = a.toString()
+        if (a in x)
+            return x[a]
+        else{
+            for (var i = 0; i < a.length; i++){
+                ret += parseInt(this.r2a(a[i]))
+            }
+        return ret.toString();
+        }
         
     }
 }
